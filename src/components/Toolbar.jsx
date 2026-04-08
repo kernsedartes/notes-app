@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Toolbar.module.css';
 import { ListIcon, OlIcon, AlignLeftIcon, AlignCenterIcon, AlignRightIcon, UndoIcon, RedoIcon } from '../icons/icons';
 
-/* eslint-disable no-restricted-globals */
 function isActive(cmd) {
-  // eslint-disable-next-line deprecation/deprecation
   return document.queryCommandState(cmd);
 }
 
@@ -13,7 +11,6 @@ export function Toolbar({ editorRef }) {
 
   function exec(cmd, value = null) {
     editorRef.current?.focus();
-    // eslint-disable-next-line deprecation/deprecation
     document.execCommand(cmd, false, value);
     editorRef.current?.dispatchEvent(new Event('input', { bubbles: true }));
   }
