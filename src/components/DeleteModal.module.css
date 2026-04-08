@@ -1,0 +1,58 @@
+.modal {
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  max-width: 340px;
+  width: 90%;
+  background: var(--surface);
+}
+
+.modal::backdrop {
+  background: rgba(28, 26, 46, 0.35);
+}
+
+.modal h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.modal p {
+  font-size: 14px;
+  color: var(--text-2);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.modalActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btnCancel {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 13.5px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 500;
+  transition: background 0.12s;
+}
+.btnCancel:hover { background: var(--surface-3); }
+
+.btnDanger {
+  background: var(--danger);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 13.5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.12s;
+}
+.btnDanger:hover { background: #C43C3B; }
