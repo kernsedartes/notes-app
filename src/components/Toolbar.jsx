@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Toolbar.module.css';
 import { ListIcon, OlIcon, AlignLeftIcon, AlignCenterIcon, AlignRightIcon, UndoIcon, RedoIcon } from '../icons/icons';
 
+
 function isActive(cmd) {
   return document.queryCommandState(cmd);
 }
